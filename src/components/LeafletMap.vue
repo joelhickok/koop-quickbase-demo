@@ -25,7 +25,7 @@ const createMap = async () => {
       // map = L.mapWithLabels('map', {
       minZoom: 2,
       zoom: 5,
-      center: {lat: 40.12, lng: -109.98},
+      center: {lat: 39, lng: -100},
       attribution: {
         test: 'https://icons8.com'
       }

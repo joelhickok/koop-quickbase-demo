@@ -1,5 +1,6 @@
 <script setup>
 import LeafletMap from '@/components/LeafletMap.vue'
+import LeafletTileLayer from '@/components/LeafletTileLayer.vue'
 import EsriVectorBasemap from '@/components/EsriVectorBasemap.vue'
 import EsriFeatureLayer from '@/components/EsriFeatureLayer.vue'
 import EsriHeatFeatureLayer from '@/components/EsriHeatFeatureLayer.vue'
@@ -17,7 +18,8 @@ const copyText = () => {
 <template>
   <LeafletMap v-model="map">
     <div v-if="map !== undefined">
-      <EsriVectorBasemap v-bind:map="map"/>
+      <LeafletTileLayer v-bind:map="map" url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"/>
+<!--      <EsriVectorBasemap v-bind:map="map"/>-->
       <EsriFeatureLayer v-bind:map="map" :url="url"/>
       <EsriHeatFeatureLayer v-bind:map="map" :url="url"/>
     </div>
