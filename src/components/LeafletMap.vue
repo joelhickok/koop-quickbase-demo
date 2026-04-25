@@ -74,7 +74,6 @@ onMounted(() => {
 }
 
 #panel {
-  //padding: 10px;
   background: #fff !important;
   width: 500px;
   max-height: 90vw;

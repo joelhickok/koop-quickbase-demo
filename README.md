@@ -1,19 +1,11 @@
-# consume-feature-service
+# koop-quickbase-demo
 
-This template should help get you started developing with Vue 3 in Vite.
+Leaflet-based map built to demo the [Koop Quickbase Provider](https://github.com/joelhickok/koop-provider-quickbase-for-arcgis).
 
-## Recommended IDE Setup
+The app uses Esri Leaflet to consume a Feature Service URL published using Koop and the Quickbase Provider.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+Data is pulled from Quickbase and an ETL process produces it as a Feature Service that can be consumed in real-time
+using ArcGIS and other products that consume these GeoServices.
 
 ## Customize configuration
 
